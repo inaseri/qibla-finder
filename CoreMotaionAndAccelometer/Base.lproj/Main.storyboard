@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreMotaionAndAccelometer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beige-designer-stencils-stencils-fs040-64_1000" translatesAutoresizingMaskIntoConstraints="NO" id="ITC-ew-PUm">
+                                <rect key="frame" x="87" y="331" width="240" height="257"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OurQibla200" translatesAutoresizingMaskIntoConstraints="NO" id="T2J-xY-piS">
+                                <rect key="frame" x="72" y="99" width="271" height="192"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T2J-xY-piS" secondAttribute="trailing" constant="71" id="AVh-jI-K6f"/>
+                            <constraint firstItem="T2J-xY-piS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="DXx-2z-Owu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T2J-xY-piS" secondAttribute="bottom" constant="571" id="FRX-ze-Gw6"/>
+                            <constraint firstItem="ITC-ew-PUm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="287" id="Mtm-29-y59"/>
+                            <constraint firstItem="T2J-xY-piS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="ToR-bd-vMb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ITC-ew-PUm" secondAttribute="bottom" constant="274" id="esW-kY-swW"/>
+                            <constraint firstItem="ITC-ew-PUm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="via-zW-iI0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ITC-ew-PUm" secondAttribute="trailing" constant="87" id="yZn-vd-h7L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="compassImage" destination="ITC-ew-PUm" id="fqa-Vp-g1H"/>
+                        <outlet property="qiblePointer" destination="T2J-xY-piS" id="m8C-ww-B5h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="OurQibla200" width="200" height="400"/>
+        <image name="beige-designer-stencils-stencils-fs040-64_1000" width="1000" height="1000"/>
+    </resources>
+</document>
